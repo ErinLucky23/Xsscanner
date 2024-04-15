@@ -22,7 +22,7 @@ if len(sys.argv)==4:
     targetSite = "{0}".format(sys.argv[2])
     name = "{0}".format(sys.argv[3])
 else:
-    sys.stderr.write("Usage: {0} <wordlist> <site> <XPATH>\n".format(sys.argv[0]))
+    sys.stderr.write("Usage: {0} <wordlist> <site> <nameofelement>\n".format(sys.argv[0]))
     sys.exit() #kills script to not open selenium
 
 
