@@ -45,8 +45,7 @@ for x in wordList:
             driver.quit()
             sys.exit()
     except TimeoutException :
-        if wait.until(ec.url_matches(str(targetSite))):
-            driver.back()
+        driver.back()
         time.sleep(0.4)
 
 print("No XXS Vulerbility found")
